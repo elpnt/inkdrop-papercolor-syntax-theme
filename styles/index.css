@@ -117,7 +117,7 @@
   color: #00afaf;
 }
 .editor .CodeMirror .cm-quote {
-  color: #8700af;
+  color: #808080;
   font-style: italic;
 }
 .editor .CodeMirror .cm-whitespace::before {
@@ -141,16 +141,11 @@
   opacity: 1;
 }
 .editor .CodeMirror .cm-inline-code {
-  background: rgba(0, 0, 0, 0.02);
-  color: #808080;
-}
-.editor .CodeMirror .cm-inline-code:not(.cm-formatting-code) {
-  border: solid 1px rgba(0, 0, 0, 0.8);
-  border-radius: 0.25em;
-  padding: 0.1em 0.2em;
+  background: rgba(0, 0, 0, 0.03);
+  color: #444444;
 }
 .editor .CodeMirror .gfm-codeblock-bg.CodeMirror-linebackground {
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.03);
 }
 .editor .CodeMirror .gfm-codeblock .cm-variable-3 {
   color: #008700;

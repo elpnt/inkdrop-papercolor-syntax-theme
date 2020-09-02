@@ -10,7 +10,7 @@ ipm install papercolor-syntax
 ```
 
 ## Screenshot
-![screenshot](./images/papercolor.png)
+![screenshot](./images/screenshot.png)
 
 ## Contribution
 Issues & PRs are welcome that enhance the theme!

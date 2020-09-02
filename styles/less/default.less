@@ -16,7 +16,7 @@
   }
   .CodeMirror-linenumber {
     // Line numbers in the gutter
-    color: @dark-grey;
+    color: @grey;
     opacity: 0.8;
   }
   .CodeMirror-selected {
@@ -35,23 +35,23 @@
   }
   .CodeMirror-foldgutter-open:after {
     // Those little arrows in the gutter
-    color: @grey;
+    color: @light-grey;
   }
   .CodeMirror-foldgutter-folded:after {
     // The arrows after you collapse code
-    color: @grey;
+    color: @light-grey;
   }
   .CodeMirror.over-gutter,
   .CodeMirror-activeline {
     .CodeMirror-foldgutter-open:after {
       // Arrows when hovering on the gutter
-      color: @grey;
+      color: @light-grey;
     }
   }
   .CodeMirror-foldmarker {
     // The [...] marking collapsed code
-    border-color: @grey;
-    background-color: @grey;
+    border-color: @light-grey;
+    background-color: @light-grey;
     color: @black;
   }
   .CodeMirror .CodeMirror-linewidget img.inline-widget {
@@ -113,7 +113,7 @@
       font-weight: bold;
     }
     .cm-comment {
-      color: @dark-grey;
+      color: @grey;
       font-style: italic;
     }
     .cm-error,
@@ -139,7 +139,7 @@
       color: @dark-cyan;
     }
     .cm-quote {
-      color: @purple;
+      color: @grey;
       font-style: italic;
     }
     .cm-whitespace::before {
@@ -161,23 +161,17 @@
     // carriage return
     .CodeMirror-code > div > pre > span::after,
     .CodeMirror-line > span::after {
-      color: @dark-grey;
+      color: @grey;
       opacity: 1;
     }
 
     .cm-inline-code {
-      background: rgba(0, 0, 0, 0.02);
+      background: rgba(0, 0, 0, 0.03);
       color: @dark-grey;
     }
 
-    .cm-inline-code:not(.cm-formatting-code) {
-      border: solid 1px rgba(0, 0, 0, 0.8);
-      border-radius: 0.25em;
-      padding: 0.1em 0.2em;
-    }
-
     .gfm-codeblock-bg.CodeMirror-linebackground {
-      background: rgba(0, 0, 0, 0.05);
+      background: rgba(0, 0, 0, 0.03);
     }
 
     .gfm-codeblock .cm-variable-3 {
@@ -194,6 +188,6 @@
   /* Active Line Highlight support */
   .CodeMirror-activeline-background,
   .CodeMirror-activeline-gutter {
-    background-color: fade(@grey, 40%) !important;
+    background-color: fade(@light-grey, 40%) !important;
   }
 }
