@@ -9,8 +9,14 @@ Originally made for vim: [NLKguyen/papercolor-theme](https://github.com/NLKNguye
 ipm install papercolor-syntax
 ```
 
+Since Inkdrop v5.0.0, you can get the theme simply from *Inkdrop > Preference > Plugins > Install* menu.
+
 ## Screenshot
 ![screenshot](./images/screenshot.png)
 
 ## Contribution
 Issues & PRs are welcome that enhance the theme!
+
+## CHANGELOG
+- v1.0.0 
+  - First release
