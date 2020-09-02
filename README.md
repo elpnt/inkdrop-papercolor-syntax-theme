@@ -1,7 +1,7 @@
 # Papercolor Syntax Theme for Inkdrop
 
 Papercolor is a color scheme inspired by Google's Material design.
-Originally made for vim: [NLKguyen/papercolor-theme](https://github.com/NLKNguyen/papercolor-theme).
+Originally made for vim: [NLKNguyen/papercolor-theme](https://github.com/NLKNguyen/papercolor-theme).
 
 ## Install(CLI)
 
@@ -18,5 +18,5 @@ Since Inkdrop v5.0.0, you can get the theme simply from *Inkdrop > Preference > 
 Issues & PRs are welcome that enhance the theme!
 
 ## CHANGELOG
-- v1.0.0 
+- v1.0.0
   - First release
