@@ -6,6 +6,7 @@
   "scripts": {
     "build": "lessc styles/less/default.less ./styles/index.css"
   },
+  "repository": "https://github.com/elpnt/inkdrop-papercolor-syntax-theme",
   "styleSheets": [
     "index.css"
   ],
