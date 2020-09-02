@@ -20,7 +20,7 @@
   background-color: #b6e9ed;
 }
 .editor .CodeMirror-cursor {
-  border-left: 1px solid #b6e9ed;
+  border-left: 1px solid #00afaf;
 }
 .editor .CodeMirror-matchingbracket,
 .editor .CodeMirror-matchingtag {
