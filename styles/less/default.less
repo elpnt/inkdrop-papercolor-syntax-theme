@@ -1,74 +1,66 @@
 @import "./colors";
 
 .editor {
-
   .CodeMirror {
     // Background color of main window
-    background-color: #FFFFFF;
-    color: @base02;
+    background-color: @white;
+    color: @black;
   }
   .CodeMirror-scroll {
     // Color of otherwise un-styled text
-    color: @base02;
+    color: @black;
   }
   .CodeMirror-gutters {
     // Gutter to the left
-    background-color: #FFFFFF;
+    background-color: @white;
   }
   .CodeMirror-linenumber {
     // Line numbers in the gutter
-    color: @base03;
-    opacity: 0.6;
+    color: @dark-grey;
+    opacity: 0.8;
   }
   .CodeMirror-selected {
-    // Highlighed text
-    background-color: @base05;
-  }
-  .CodeMirror-focused .CodeMirror-selected {
-    // Highlighed text
-    background-color: @base04;
+    // Highlighted text
+    background-color: @cyan;
   }
   .CodeMirror-cursor {
     // The cursor
-    border-left: 1px solid @base00;
+    border-left: 1px solid @cyan;
   }
   .CodeMirror-matchingbracket,
   .CodeMirror-matchingtag {
     // When you click a tag/bracket and the matching one is highlighted
-    background: @base03 !important;
-    border-bottom: 1px solid @base08 !important;
+    background: @cyan !important;
+    border-bottom: 1px solid @cyan !important;
   }
   .CodeMirror-foldgutter-open:after {
     // Those little arrows in the gutter
-    color: @base03;
+    color: @grey;
   }
   .CodeMirror-foldgutter-folded:after {
     // The arrows after you collapse code
-    color: @base03;
+    color: @grey;
   }
   .CodeMirror.over-gutter,
   .CodeMirror-activeline {
     .CodeMirror-foldgutter-open:after {
       // Arrows when hovering on the gutter
-      color: @base03;
+      color: @grey;
     }
   }
   .CodeMirror-foldmarker {
     // The [...] marking collapsed code
-    border-color: @base03;
-    background-color: @base03;
-    color: @base02;
+    border-color: @grey;
+    background-color: @grey;
+    color: @black;
   }
   .CodeMirror .CodeMirror-linewidget img.inline-widget {
-    background: rgba(0,0,0,0.05);
+    background: rgba(0, 0, 0, 0.05);
   }
-  .CodeMirror-searching {
+  .cm-searching {
     // Ctrl + F results
-    background-color: @base0D;
-    // Selected result
-    &.searching-current-match {
-      background-color: @base0C;
-    }
+    border: 1px solid @dark-blue;
+    background: transparent;
   }
 
   /* All 'dem swatches */
@@ -76,103 +68,132 @@
   .CodeMirror {
     .cm-atom,
     .cm-formatting-list.cm-variable-3 {
-      color: @base0C;
+      color: @orange;
+      font-weight: bold;
     }
 
     .cm-keyword,
     .cm-formatting-list.cm-variable-2 {
-      color: @base0A;
+      color: @pink;
+      font-weight: bold;
+    }
+
+    .cm-formatting-list.cm-keyword {
+      color: @blue;
+      font-weight: bold;
+    }
+
+    .cm-formatting + .cm-keyword {
+      color: @black;
+      font-weight: normal;
     }
 
     .cm-url,
     .cm-string,
     .cm-string-2,
     .cm-hr {
-      color: @base09;
+      color: @dark-green;
     }
     .cm-number,
     .cm-attribute,
     .cm-plus {
-      color: @base0A;
+      color: @orange;
     }
-    .cm-def,
+    // .cm-def,
     .cm-property {
-      color: @base0C;
+      color: @orange;
     }
     .cm-variable {
-      color: @base0A;
+      color: @blue;
     }
     .cm-operator,
     .cm-meta,
     .cm-bracket {
-      color: @base0E;
+      color: @blue;
+      font-weight: bold;
     }
     .cm-comment {
-      color: @base04;
+      color: @dark-grey;
       font-style: italic;
     }
     .cm-error,
     .cm-minus {
-      color: @base0B;
+      color: @red;
     }
     .cm-formatting-header {
       opacity: 0.3;
     }
     .cm-header {
-      color: @base0A;
+      color: @blue;
     }
     .cm-link {
-      color: @base0E;
+      color: @dark-cyan;
       text-underline-position: under;
     }
     .cm-rangeinfo {
-      color: @base0C;
+      color: @orange;
     }
     .cm-qualifier,
     .cm-builtin,
     .cm-tag {
-      color: @base08;
+      color: @dark-cyan;
     }
     .cm-quote {
-      color: @base0F;
+      color: @purple;
       font-style: italic;
     }
     .cm-whitespace::before {
-      color: @base04;
+      color: @dark-cyan;
       opacity: 0.4;
     }
-    .cm-formatting-quote, .cm-formatting-strong, .cm-formatting-em {
+    .cm-formatting-quote,
+    .cm-formatting-strong,
+    .cm-formatting-em {
       opacity: 0.6;
     }
     .cm-strong {
-      color: @base0B;
+      color: @red;
     }
     .cm-em {
-      color: @base0C;
+      color: @orange;
     }
 
     // carriage return
-    .CodeMirror-code > div > pre > span::after, .CodeMirror-line > span::after {
-      color: @base00;
-      opacity: 0.4;
+    .CodeMirror-code > div > pre > span::after,
+    .CodeMirror-line > span::after {
+      color: @dark-grey;
+      opacity: 1;
     }
 
     .cm-inline-code {
       background: rgba(0, 0, 0, 0.02);
-      color: @base03;
+      color: @dark-grey;
+    }
+
+    .cm-inline-code:not(.cm-formatting-code) {
+      border: solid 1px rgba(0, 0, 0, 0.8);
+      border-radius: 0.25em;
+      padding: 0.1em 0.2em;
     }
 
     .gfm-codeblock-bg.CodeMirror-linebackground {
-      background: rgba(0, 0, 0, 0.01);
+      background: rgba(0, 0, 0, 0.05);
     }
 
-    .cm-table-sep, .table-row.table-row-1 {
-      color: @base0E;
+    .gfm-codeblock .cm-variable-3 {
+      color: @dark-green;
+      font-weight: bold;
+    }
+
+    .cm-table-sep,
+    .table-row.table-row-1 {
+      color: @dark-green;
     }
   }
 
   /* Active Line Highlight support */
-  .CodeMirror-activeline-background, .CodeMirror-activeline-gutter {
-    background-color: fade(@base06, 70%) !important;
+  .CodeMirror-activeline-background,
+  .CodeMirror-activeline-gutter {
+    background-color: fade(@grey, 40%) !important;
   }
 }
